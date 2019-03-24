@@ -30,3 +30,102 @@
     transform: rotate(360deg);
   }
 }
+/* 
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+} */
+
+.feature__img {
+  width: 100px;
+}
+
+h5,
+.h5 {
+  font-size: 0.85em;
+}
+
+.card-text {
+  font-size: 0.75em;
+}
+
+.carousel-indicators li {
+  background-color: #4b4d4f;
+}
+
+.carousel-indicators {
+  bottom: -10px;
+}
+
+.carousel-caption {
+  bottom: 35px;
+  border-radius: 25px;
+  background-color: #939495;
+  padding-bottom: 0px;
+  padding-top: 10px;
+  /* right: 23%;
+  left: 23%; */
+  /* color: #000; */
+}
+#pricing .carousel {
+  min-height: 500px;
+}
+
+/* .carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-size: 100%, 100%;
+  background-image: none;
+} */
+
+#pricing .carousel-control-next-icon {
+  background-image: url("../src/img/icons/next.svg");
+  /* right: -60px; */
+}
+
+#pricing .carousel-control-prev-icon {
+  background-image: url("../src/img/icons/prev.svg");
+  /* left:-60px; */
+}
+
+.centered {
+  /* position: fixed; */
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 500px;
+  height: 200px;
+  background: black;
+}
+
+.main-text {
+  position: absolute;
+  top: 400px;
+  /* width: 96.66666666666666%; */
+  color: #fff;
+  /* bottom: 15px; */
+  border-radius: 4.8px;
+  background-color: #939495;
+  padding-bottom: 5px;
+  padding-top: 10px;
+  right: 30%;
+  left: 30%;
+}
+
+#whyDipsea {
+  padding-top: 40x;
+}
+
+.max_width {
+  width: 400px;
+}
