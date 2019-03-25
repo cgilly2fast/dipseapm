@@ -21,7 +21,7 @@ class WhyDipsea extends Component {
             </p>
           </div>
           <div className="col-lg-5">
-            <img className="featurette-image img-fluid mx-auto" />
+            {/* <img className="featurette-image img-fluid mx-auto" /> */}
           </div>
         </Row>
         <hr className="featurette-divider" />

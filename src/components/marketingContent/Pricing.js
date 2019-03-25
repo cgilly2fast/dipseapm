@@ -17,6 +17,7 @@ class Pricing extends Component {
                 <img
                   src={require("../../img/features/Thumbs-Up.svg")}
                   className="feature__img"
+                  alt="Airbnb Profile Listing Creation"
                 />
 
                 <h6>Airbnb Profile &amp; Listing Creation</h6>
@@ -30,6 +31,7 @@ class Pricing extends Component {
                 <img
                   src={require("../../img/features/Comment.svg")}
                   className="feature__img"
+                  alt="Reservation Support"
                 />
 
                 <h6>Reservation Support</h6>
@@ -43,6 +45,7 @@ class Pricing extends Component {
                 <img
                   src={require("../../img/features/Conversation.svg")}
                   className="feature__img"
+                  alt="Guest Service Support"
                 />
 
                 <h6>Guest Service Support</h6>
@@ -57,6 +60,7 @@ class Pricing extends Component {
                 <img
                   src={require("../../img/features/Sheild.svg")}
                   className="feature__img"
+                  alt="Guest Screening"
                 />
 
                 <h6>Guest Screening</h6>
@@ -71,6 +75,7 @@ class Pricing extends Component {
                 <img
                   src={require("../../img/features/Checkmark.svg")}
                   className="feature__img"
+                  alt="Guest Check-in"
                 />
 
                 <h6>Guest Check-in</h6>
@@ -84,6 +89,7 @@ class Pricing extends Component {
                 <img
                   src={require("../../img/features/MagnifyGlass.svg")}
                   className="feature__img"
+                  alt="Check-out Inspections"
                 />
 
                 <h6>Check-out Inspections</h6>
@@ -100,6 +106,7 @@ class Pricing extends Component {
                 <img
                   src={require("../../img/features/Tools.svg")}
                   className="feature__img"
+                  alt="Maintenance Coordination"
                 />
 
                 <h6>Maintenance Coordination</h6>
@@ -113,6 +120,7 @@ class Pricing extends Component {
                 <img
                   src={require("../../img/features/Badge.svg")}
                   className="feature__img"
+                  alt="Housekeeping Services"
                 />
 
                 <h6>Housekeeping Services</h6>
@@ -126,6 +134,7 @@ class Pricing extends Component {
                 <img
                   src={require("../../img/features/Up-Signal.svg")}
                   className="feature__img"
+                  alt="Revenue Occupancy Management"
                 />
 
                 <h6>Revenue &amp; Occupancy Management</h6>
@@ -139,6 +148,7 @@ class Pricing extends Component {
                 <img
                   src={require("../../img/features/Diamond.svg")}
                   className="feature__img"
+                  alt="Interior Design Optimization"
                 />
 
                 <h6>Interior Design Optimization</h6>
@@ -153,6 +163,7 @@ class Pricing extends Component {
                 <img
                   src={require("../../img/features/Trophy.svg")}
                   className="feature__img"
+                  alt="Continuous Airbnb Listing Optimization"
                 />
 
                 <h6>Continuous Airbnb Listing Optimization</h6>
@@ -167,6 +178,7 @@ class Pricing extends Component {
                 <img
                   src={require("../../img/features/Book.svg")}
                   className="feature__img"
+                  alt="Guidebook"
                 />
 
                 <h6>Guidebook</h6>
