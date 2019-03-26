@@ -1,12 +1,13 @@
 import React, { Component } from "react";
 import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 class WhyDipsea extends Component {
   render() {
     return (
-      <div id="whyDipsea">
-        <Row>
-          <div className="col-lg-8 offset-md-2 col-md-8 offset-md-2 col-sm-8 offset-sm-2 col-xs-2 offset-xs-2">
+      <div id="whyDipsea" className="padding-top-40">
+        <Row className="padding-bottom-30">
+          <Col xs={{span:10, offset: 1}} sm={{span:8, offset: 2}} md={{span:10, offset: 1}} lg={{span:8, offset: 2}} xl={{span:8, offset: 2}}>
             <h3 className="featurette-heading">Why Dipsea?</h3>
             <p className="text-justify">
               The dirty little secret of Airbnb property management companies is
@@ -19,7 +20,7 @@ class WhyDipsea extends Component {
               are local and ready to take action 24/7/365 in the event of any
               guest issue or emergency.
             </p>
-          </div>
+          </Col>
           <div className="col-lg-5">
             {/* <img className="featurette-image img-fluid mx-auto" /> */}
           </div>

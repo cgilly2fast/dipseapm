@@ -3,6 +3,8 @@ import React, { Component } from "react";
 import Card from "react-bootstrap/Card";
 import Collapse from "react-bootstrap/Collapse";
 import Button from "react-bootstrap/Button";
+import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
 
 class FAQ extends Component {
   constructor(props, context) {
@@ -29,24 +31,47 @@ class FAQ extends Component {
   render() {
     const { open } = this.state;
     return (
-      <div id="FAQs">
-        <h2>Frequently Asked Questions</h2>
-      
-          
-            <Card className="">
-              <Card.Header>
+      <div id="FAQs" className="padding-top-40">
+        <h2 className="padding-bottom-30">Frequently Asked Questions</h2>
+
+        <Row>
+          <Col
+            xs={{ span: 10, offset: 1 }}
+            sm={{ span: 10, offset: 1 }}
+            md={{ span: 8, offset: 2 }}
+            lg={{ span: 8, offset: 2 }}
+            xl={{ span: 8, offset: 2 }}
+          >
+            <Card className="card-max-width">
+              <Card.Header className="text-left">
                 <h6>
+                
                   <Button
                     onClick={() => this.handleCollapse(0)}
                     aria-controls="question0"
                     aria-expanded={open[0].value}
                     type="button"
-                    variant="link"
+                    variant="light"
                   >
+                    {open[0].value === false ? (
+                      <img
+                        width="50"
+                        height="50"
+                        src={require("../../img/icons/RightArrow.svg")}
+                        alt="Right Arrow"
+                      />
+                    ) : (
+                      <img
+                        width="50"
+                        height="50"
+                        src={require("../../img/icons/DownArrow.svg")}
+                        alt="Down Arrow"
+                      />
+                    )}
                     Am I a good fit for Dipsea?
                   </Button>
                 </h6>
-              </Card.Header>
+              </Card.Header >
               <Collapse in={open[0].value}>
                 <Card.Body>
                   <Card.Text className="text-justify" id="question0">
@@ -62,17 +87,32 @@ class FAQ extends Component {
               </Collapse>
             </Card>
 
-            <Card className="">
-              <Card.Header>
+            <Card className="card-max-width">
+              <Card.Header className="text-left">
                 <h6>
                   <Button
                     onClick={() => this.handleCollapse(1)}
                     aria-controls="question1"
                     aria-expanded={open[1].value}
                     type="button"
-                    variant="link"
+                    variant="light"
                   >
-                    Why should I choose Dipsea: Airbnb Property Management?
+                    {open[1].value === false ? (
+                      <img
+                        width="50"
+                        height="50"
+                        src={require("../../img/icons/RightArrow.svg")}
+                        alt="Right Arrow"
+                      />
+                    ) : (
+                      <img
+                        width="50"
+                        height="50"
+                        src={require("../../img/icons/DownArrow.svg")}
+                        alt="Down Arrow"
+                      />
+                    )}
+                    Why should I choose Dipsea?
                   </Button>
                 </h6>
               </Card.Header>
@@ -88,17 +128,32 @@ class FAQ extends Component {
                 </Card.Body>
               </Collapse>
             </Card>
-            
-            <Card className="">
-              <Card.Header>
+
+            <Card className="card-max-width">
+              <Card.Header className="text-left">
                 <h6>
                   <Button
                     onClick={() => this.handleCollapse(2)}
                     aria-controls="question2"
                     aria-expanded={open[2].value}
                     type="button"
-                    variant="link"
+                    variant="light"
                   >
+                    {open[2].value === false ? (
+                      <img
+                        width="50"
+                        height="50"
+                        src={require("../../img/icons/RightArrow.svg")}
+                        alt="Right Arrow"
+                      />
+                    ) : (
+                      <img
+                        width="50"
+                        height="50"
+                        src={require("../../img/icons/DownArrow.svg")}
+                        alt="Down Arrow"
+                      />
+                    )}
                     How much will I earn?
                   </Button>
                 </h6>
@@ -115,17 +170,32 @@ class FAQ extends Component {
                 </Card.Body>
               </Collapse>
             </Card>
-            
-            <Card className="">
-              <Card.Header>
+
+            <Card className="card-max-width">
+              <Card.Header className="text-left">
                 <h6>
                   <Button
                     onClick={() => this.handleCollapse(3)}
                     aria-controls="question3"
                     aria-expanded={open[3].value}
                     type="button"
-                    variant="link"
+                    variant="light"
                   >
+                    {open[3].value === false ? (
+                      <img
+                        width="50"
+                        height="50"
+                        src={require("../../img/icons/RightArrow.svg")}
+                        alt="Right Arrow"
+                      />
+                    ) : (
+                      <img
+                        width="50"
+                        height="50"
+                        src={require("../../img/icons/DownArrow.svg")}
+                        alt="Down Arrow"
+                      />
+                    )}
                     What is an optimized Airbnb listing?
                   </Button>
                 </h6>
@@ -141,16 +211,31 @@ class FAQ extends Component {
                 </Card.Body>
               </Collapse>
             </Card>
-            <Card className="">
-              <Card.Header>
+            <Card className="card-max-width">
+              <Card.Header className="text-left">
                 <h6>
                   <Button
                     onClick={() => this.handleCollapse(4)}
                     aria-controls="question4"
                     aria-expanded={open[4].value}
                     type="button"
-                    variant="link"
+                    variant="light"
                   >
+                    {open[4].value === false ? (
+                      <img
+                        width="50"
+                        height="50"
+                        src={require("../../img/icons/RightArrow.svg")}
+                        alt="Right Arrow"
+                      />
+                    ) : (
+                      <img
+                        width="50"
+                        height="50"
+                        src={require("../../img/icons/DownArrow.svg")}
+                        alt="Down Arrow"
+                      />
+                    )}
                     How are guests vetted?
                   </Button>
                 </h6>
@@ -166,19 +251,32 @@ class FAQ extends Component {
                 </Card.Body>
               </Collapse>
             </Card>
-            
-            
 
-            <Card className="">
-              <Card.Header>
+            <Card className="card-max-width">
+              <Card.Header className="text-left">
                 <h6>
                   <Button
                     onClick={() => this.handleCollapse(5)}
                     aria-controls="question5"
                     aria-expanded={open[5].value}
                     type="button"
-                    variant="link"
+                    variant="light"
                   >
+                    {open[5].value === false ? (
+                      <img
+                        width="50"
+                        height="50"
+                        src={require("../../img/icons/RightArrow.svg")}
+                        alt="Right Arrow"
+                      />
+                    ) : (
+                      <img
+                        width="50"
+                        height="50"
+                        src={require("../../img/icons/DownArrow.svg")}
+                        alt="Down Arrow"
+                      />
+                    )}
                     What happens if a guest causes damage or steals from my
                     home?
                   </Button>
@@ -190,44 +288,77 @@ class FAQ extends Component {
                     Dipsea proactively advises hosts and takes steps to prevent
                     damage and theft. In the unlikely event that damage or theft
                     occurs, Dipsea works with the host to gather evidence and
-                    submit a claim through Airbnb’s Resolution Center. The host is expected to cover low-value damage and
-                    repair as a cost of doing business.
+                    submit a claim through Airbnb’s Resolution Center. The host
+                    is expected to cover low-value damage and repair as a cost
+                    of doing business.
                   </Card.Text>
                 </Card.Body>
               </Collapse>
             </Card>
-            
-            <Card className="">
-              <Card.Header>
+
+            <Card className="card-max-width">
+              <Card.Header className="text-left">
                 <h6>
                   <Button
                     onClick={() => this.handleCollapse(6)}
                     aria-controls="question6"
                     aria-expanded={open[6].value}
                     type="button"
-                    variant="link"
+                    variant="light"
                   >
+                    {open[6].value === false ? (
+                      <img
+                        width="50"
+                        height="50"
+                        src={require("../../img/icons/RightArrow.svg")}
+                        alt="Right Arrow"
+                      />
+                    ) : (
+                      <img
+                        width="50"
+                        height="50"
+                        src={require("../../img/icons/DownArrow.svg")}
+                        alt="Down Arrow"
+                      />
+                    )}
                     Can I cancel my contract at any time?
                   </Button>
                 </h6>
               </Card.Header>
               <Collapse in={open[6].value}>
                 <Card.Body>
-                  <Card.Text className="text-justify" id="question6">Yes.</Card.Text>
+                  <Card.Text className="text-justify" id="question6">
+                    Yes.
+                  </Card.Text>
                 </Card.Body>
               </Collapse>
             </Card>
 
-            <Card className="">
-              <Card.Header>
+            <Card className="card-max-width">
+              <Card.Header className="text-left">
                 <h6>
                   <Button
                     onClick={() => this.handleCollapse(7)}
                     aria-controls="question7"
                     aria-expanded={open[7].value}
                     type="button"
-                    variant="link"
+                    variant="light"
                   >
+                    {open[7].value === false ? (
+                      <img
+                        width="50"
+                        height="50"
+                        src={require("../../img/icons/RightArrow.svg")}
+                        alt="Right Arrow"
+                      />
+                    ) : (
+                      <img
+                        width="50"
+                        height="50"
+                        src={require("../../img/icons/DownArrow.svg")}
+                        alt="Down Arrow"
+                      />
+                    )}
                     Why do you only list on Airbnb?
                   </Button>
                 </h6>
@@ -244,16 +375,31 @@ class FAQ extends Component {
               </Collapse>
             </Card>
 
-            <Card className="">
-              <Card.Header>
+            <Card className="card-max-width">
+              <Card.Header className="text-left">
                 <h6>
                   <Button
                     onClick={() => this.handleCollapse(8)}
                     aria-controls="question8"
                     aria-expanded={open[8].value}
                     type="button"
-                    variant="link"
+                    variant="light"
                   >
+                    {open[8].value === false ? (
+                      <img
+                        width="50"
+                        height="50"
+                        src={require("../../img/icons/RightArrow.svg")}
+                        alt="Right Arrow"
+                      />
+                    ) : (
+                      <img
+                        width="50"
+                        height="50"
+                        src={require("../../img/icons/DownArrow.svg")}
+                        alt="Down Arrow"
+                      />
+                    )}
                     How do I get started?
                   </Button>
                 </h6>
@@ -285,9 +431,9 @@ class FAQ extends Component {
                 </Card.Body>
               </Collapse>
             </Card>
-          
-        
-        <hr className="featurette-divider" />
+          </Col>
+        </Row>
+        <hr className="featurette-divider margin-top-45" />
       </div>
     );
   }

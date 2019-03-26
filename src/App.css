@@ -63,12 +63,18 @@ h5,
   bottom: -10px;
 }
 
+#pricing .carousel-indicators {
+  bottom: -30px;
+}
+
 .carousel-caption {
   bottom: 35px;
   border-radius: 25px;
   background-color: #939495;
   padding-bottom: 0px;
   padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
   /* right: 23%;
   left: 23%; */
   /* color: #000; */
@@ -107,7 +113,9 @@ h5,
   height: 200px;
   background: black;
 }
-
+.card-max-width {
+  max-width: 690px;
+}
 .main-text {
   position: absolute;
   top: 400px;
@@ -122,10 +130,30 @@ h5,
   left: 30%;
 }
 
-#whyDipsea {
-  padding-top: 40x;
+.padding-top-40 {
+  padding-top: 40px;
+}
+
+.padding-top-30 {
+  padding-top: 30px;
+}
+
+.padding-bottom-30 {
+  padding-bottom: 30px;
 }
 
 .max_width {
   width: 400px;
+}
+
+.margin-top-99 {
+  margin-top: 189px;
+}
+
+.margin-bottom-99 {
+  margin-bottom: 189px;
+}
+
+.margin-top-45 {
+  margin-top: 45px;
 }
