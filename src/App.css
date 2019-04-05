@@ -158,14 +158,21 @@ h5,
   margin-top: 45px;
 }
 
-.btn-light {
+/* .btn-light {
   display: block;
+  justify-content: center;
+} */
+
+.btn-light {
+  display: flex;
+  /* flex-wrap: wrap; */
+  align-items: center;
   justify-content: center;
 }
 
-.text-center {
+/* .text-center {
   margin-top: 20px;
-}
+} */
 
 @media screen {
   .btn-light {
