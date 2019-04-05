@@ -79,6 +79,27 @@ h5,
   left: 23%; */
   /* color: #000; */
 }
+@media screen and (max-width: 992px) {
+  .carousel-caption {
+    /* top: 2em; */
+    border-radius: 25px;
+    background-color: #939495;
+    padding-bottom: 0px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    /* right: 23%;
+    left: 23%; */
+    /* color: #000; */
+  }
+  .d-block {
+    height: 18rem;
+  }
+  /* .carousel-words {
+  display: inline;
+} */
+}
+
 #pricing .carousel {
   min-height: 500px;
 }
@@ -164,7 +185,7 @@ h5,
 } */
 
 .btn-light {
-  display: flex;
+  display: contents;
   /* flex-wrap: wrap; */
   align-items: center;
   justify-content: center;
@@ -174,8 +195,26 @@ h5,
   margin-top: 20px;
 } */
 
-@media screen {
+/* @media screen {
   .btn-light {
     display: inline-flex;
   }
-}
+} */
+
+/* scratch
+.carousel-caption {
+  bottom: 11em;
+  border-radius: 25px;
+  background-color: #939495;
+  padding-bottom: 0px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #000;
+  right: 15%; 
+  left: 15%;
+  position: relative;
+  justify-content: center;
+  display: inline-block;
+  width: 17rem;
+  height: 11rem; */

@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import Carousel from "react-bootstrap/Carousel";
+import React, { Component } from 'react';
+import Carousel from 'react-bootstrap/Carousel';
 // import Jumbotron from "react-bootstrap/Jumbotron";
 
 class HouseCarousel extends Component {
@@ -36,12 +36,12 @@ class HouseCarousel extends Component {
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src={require("../img/houses/house1.png")}
+              src={require('../img/houses/house1.png')}
               alt="First slide"
             />
             <Carousel.Caption>
               <h2>Airbnb Management</h2>
-              <p>
+              <p className="carousel-words">
                 Free up your time, meet your revenue goals, and deliver
                 memorable experiences to guests.
               </p>
@@ -50,13 +50,13 @@ class HouseCarousel extends Component {
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src={require("../img/houses/house2.png")}
+              src={require('../img/houses/house2.png')}
               alt="Third slide"
             />
 
             <Carousel.Caption>
               <h2>Airbnb Management</h2>
-              <p>
+              <p className="carousel-words">
                 Free up your time, meet your revenue goals, and deliver
                 memorable experiences to guests.
               </p>
@@ -65,13 +65,13 @@ class HouseCarousel extends Component {
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src={require("../img/houses/house3.png")}
+              src={require('../img/houses/house3.png')}
               alt="Third slide"
             />
 
             <Carousel.Caption>
               <h2>Airbnb Management</h2>
-              <p>
+              <p className="carousel-words">
                 Free up your time, meet your revenue goals, and deliver
                 memorable experiences to guests.
               </p>
@@ -80,7 +80,7 @@ class HouseCarousel extends Component {
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src={require("../img/houses/house4.png")}
+              src={require('../img/houses/house4.png')}
               alt="Fouth slide"
             />
             <Carousel.Caption>
@@ -94,7 +94,7 @@ class HouseCarousel extends Component {
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src={require("../img/houses/house5.png")}
+              src={require('../img/houses/house5.png')}
               alt="Fith slide"
             />
             <Carousel.Caption>
@@ -108,7 +108,7 @@ class HouseCarousel extends Component {
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src={require("../img/houses/house6.png")}
+              src={require('../img/houses/house6.png')}
               alt="Sixth slide"
             />
             <Carousel.Caption>
