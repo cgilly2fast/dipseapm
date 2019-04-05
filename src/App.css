@@ -93,12 +93,12 @@ h5,
 } */
 
 #pricing .carousel-control-next-icon {
-  background-image: url("../src/img/icons/next.svg");
+  background-image: url('../src/img/icons/next.svg');
   /* right: -60px; */
 }
 
 #pricing .carousel-control-prev-icon {
-  background-image: url("../src/img/icons/prev.svg");
+  background-image: url('../src/img/icons/prev.svg');
   /* left:-60px; */
 }
 
@@ -156,4 +156,19 @@ h5,
 
 .margin-top-45 {
   margin-top: 45px;
+}
+
+.btn-light {
+  display: block;
+  justify-content: center;
+}
+
+.text-center {
+  margin-top: 20px;
+}
+
+@media screen {
+  .btn-light {
+    display: inline-flex;
+  }
 }

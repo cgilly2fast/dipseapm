@@ -1,10 +1,10 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 // import Row from "react-bootstrap/Row";
-import Card from "react-bootstrap/Card";
-import Collapse from "react-bootstrap/Collapse";
-import Button from "react-bootstrap/Button";
-import Col from "react-bootstrap/Col";
-import Row from "react-bootstrap/Row";
+import Card from 'react-bootstrap/Card';
+import Collapse from 'react-bootstrap/Collapse';
+import Button from 'react-bootstrap/Button';
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
 
 class FAQ extends Component {
   constructor(props, context) {
@@ -24,7 +24,7 @@ class FAQ extends Component {
   handleCollapse = questionId => {
     const open = [...this.state.open];
     open[questionId].value = !open[questionId].value;
-    console.log("open", open);
+    console.log('open', open);
     this.setState({ open });
   };
 
@@ -45,7 +45,6 @@ class FAQ extends Component {
             <Card className="card-max-width">
               <Card.Header className="text-left">
                 <h6>
-                
                   <Button
                     onClick={() => this.handleCollapse(0)}
                     aria-controls="question0"
@@ -57,21 +56,21 @@ class FAQ extends Component {
                       <img
                         width="50"
                         height="50"
-                        src={require("../../img/icons/RightArrow.svg")}
+                        src={require('../../img/icons/RightArrow.svg')}
                         alt="Right Arrow"
                       />
                     ) : (
                       <img
                         width="50"
                         height="50"
-                        src={require("../../img/icons/DownArrow.svg")}
+                        src={require('../../img/icons/DownArrow.svg')}
                         alt="Down Arrow"
                       />
                     )}
                     Am I a good fit for Dipsea?
                   </Button>
                 </h6>
-              </Card.Header >
+              </Card.Header>
               <Collapse in={open[0].value}>
                 <Card.Body>
                   <Card.Text className="text-justify" id="question0">
@@ -101,14 +100,14 @@ class FAQ extends Component {
                       <img
                         width="50"
                         height="50"
-                        src={require("../../img/icons/RightArrow.svg")}
+                        src={require('../../img/icons/RightArrow.svg')}
                         alt="Right Arrow"
                       />
                     ) : (
                       <img
                         width="50"
                         height="50"
-                        src={require("../../img/icons/DownArrow.svg")}
+                        src={require('../../img/icons/DownArrow.svg')}
                         alt="Down Arrow"
                       />
                     )}
@@ -143,14 +142,14 @@ class FAQ extends Component {
                       <img
                         width="50"
                         height="50"
-                        src={require("../../img/icons/RightArrow.svg")}
+                        src={require('../../img/icons/RightArrow.svg')}
                         alt="Right Arrow"
                       />
                     ) : (
                       <img
                         width="50"
                         height="50"
-                        src={require("../../img/icons/DownArrow.svg")}
+                        src={require('../../img/icons/DownArrow.svg')}
                         alt="Down Arrow"
                       />
                     )}
@@ -185,14 +184,14 @@ class FAQ extends Component {
                       <img
                         width="50"
                         height="50"
-                        src={require("../../img/icons/RightArrow.svg")}
+                        src={require('../../img/icons/RightArrow.svg')}
                         alt="Right Arrow"
                       />
                     ) : (
                       <img
                         width="50"
                         height="50"
-                        src={require("../../img/icons/DownArrow.svg")}
+                        src={require('../../img/icons/DownArrow.svg')}
                         alt="Down Arrow"
                       />
                     )}
@@ -225,14 +224,14 @@ class FAQ extends Component {
                       <img
                         width="50"
                         height="50"
-                        src={require("../../img/icons/RightArrow.svg")}
+                        src={require('../../img/icons/RightArrow.svg')}
                         alt="Right Arrow"
                       />
                     ) : (
                       <img
                         width="50"
                         height="50"
-                        src={require("../../img/icons/DownArrow.svg")}
+                        src={require('../../img/icons/DownArrow.svg')}
                         alt="Down Arrow"
                       />
                     )}
@@ -266,14 +265,14 @@ class FAQ extends Component {
                       <img
                         width="50"
                         height="50"
-                        src={require("../../img/icons/RightArrow.svg")}
+                        src={require('../../img/icons/RightArrow.svg')}
                         alt="Right Arrow"
                       />
                     ) : (
                       <img
                         width="50"
                         height="50"
-                        src={require("../../img/icons/DownArrow.svg")}
+                        src={require('../../img/icons/DownArrow.svg')}
                         alt="Down Arrow"
                       />
                     )}
@@ -310,14 +309,14 @@ class FAQ extends Component {
                       <img
                         width="50"
                         height="50"
-                        src={require("../../img/icons/RightArrow.svg")}
+                        src={require('../../img/icons/RightArrow.svg')}
                         alt="Right Arrow"
                       />
                     ) : (
                       <img
                         width="50"
                         height="50"
-                        src={require("../../img/icons/DownArrow.svg")}
+                        src={require('../../img/icons/DownArrow.svg')}
                         alt="Down Arrow"
                       />
                     )}
@@ -348,14 +347,14 @@ class FAQ extends Component {
                       <img
                         width="50"
                         height="50"
-                        src={require("../../img/icons/RightArrow.svg")}
+                        src={require('../../img/icons/RightArrow.svg')}
                         alt="Right Arrow"
                       />
                     ) : (
                       <img
                         width="50"
                         height="50"
-                        src={require("../../img/icons/DownArrow.svg")}
+                        src={require('../../img/icons/DownArrow.svg')}
                         alt="Down Arrow"
                       />
                     )}
@@ -389,14 +388,14 @@ class FAQ extends Component {
                       <img
                         width="50"
                         height="50"
-                        src={require("../../img/icons/RightArrow.svg")}
+                        src={require('../../img/icons/RightArrow.svg')}
                         alt="Right Arrow"
                       />
                     ) : (
                       <img
                         width="50"
                         height="50"
-                        src={require("../../img/icons/DownArrow.svg")}
+                        src={require('../../img/icons/DownArrow.svg')}
                         alt="Down Arrow"
                       />
                     )}
