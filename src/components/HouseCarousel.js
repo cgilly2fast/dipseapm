@@ -41,7 +41,7 @@ class HouseCarousel extends Component {
             />
             <Carousel.Caption>
               <h2>Airbnb Management</h2>
-              <p className="carousel-words">
+              <p>
                 Free up your time, meet your revenue goals, and deliver
                 memorable experiences to guests.
               </p>
@@ -56,7 +56,7 @@ class HouseCarousel extends Component {
 
             <Carousel.Caption>
               <h2>Airbnb Management</h2>
-              <p className="carousel-words">
+              <p>
                 Free up your time, meet your revenue goals, and deliver
                 memorable experiences to guests.
               </p>
@@ -71,7 +71,7 @@ class HouseCarousel extends Component {
 
             <Carousel.Caption>
               <h2>Airbnb Management</h2>
-              <p className="carousel-words">
+              <p>
                 Free up your time, meet your revenue goals, and deliver
                 memorable experiences to guests.
               </p>
