@@ -277,7 +277,7 @@ class FAQ extends Component {
                         alt="Down Arrow"
                       />
                     )}
-                    What happens if a guest causes damage or steals from my
+                    What happens if a guest damages or steals from my
                     home?
                   </Button>
                 </h6>
@@ -321,7 +321,7 @@ class FAQ extends Component {
                         alt="Down Arrow"
                       />
                     )}
-                    Can I cancel my contract at any time?
+                    Can I cancel at any time?
                   </Button>
                 </h6>
               </Card.Header>

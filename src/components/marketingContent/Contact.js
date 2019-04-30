@@ -30,7 +30,7 @@ class Contact extends Component {
         thisElement.setState({ success: true });
         setTimeout(() => {
           thisElement.setState({ success: false });
-        }, 9999);
+        }, 19998);
       })
       .catch(function(error) {
         console.error("Error adding document: ", error);
