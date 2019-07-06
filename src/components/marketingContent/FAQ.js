@@ -30,6 +30,7 @@ class FAQ extends Component {
 
   render() {
     const { open } = this.state;
+    const { page } = this.props;
     return (
       <div id="FAQs" className="padding-top-40">
         <h2 className="padding-bottom-30">Frequently Asked Questions</h2>
@@ -75,8 +76,7 @@ class FAQ extends Component {
               <Collapse in={open[0].value}>
                 <Card.Body>
                   <Card.Text className="text-justify" id="question0">
-                    My ideal Airbnb host (or soon to be host) have a property in
-                    Stinson Beach or Bolinas. This is allows me to offer Airbnb
+                    My ideal Airbnb host (or soon to be host) have a property in {page === "Home" ? "Stinson Beach or Bolinas": page}. This is allows me to offer Airbnb
                     management and still maintain a quality experience for the
                     guest where I coordinate with the cleaner, respond to all
                     messages, do revenue management, continuously optimize the
@@ -120,8 +120,8 @@ class FAQ extends Component {
                 <Card.Body>
                   <Card.Text className="text-justify" id="question1">
                     I run a small, personalized operation. Every one of my
-                    Airbnb listings means a lot to me. That means you, the
-                    Airbnb host, and the guest gets personalized attention. I
+                    Airbnb/VRBO listings means a lot to me. That means you, the
+                    Airbnb/VRBO host, and the guest gets personalized attention. I
                     respond to every inquiry myself. You will have one point of
                     contact, me.
                   </Card.Text>
@@ -196,17 +196,17 @@ class FAQ extends Component {
                         alt="Down Arrow"
                       />
                     )}
-                    What is an optimized Airbnb listing?
+                    What is an optimized Airbnb/VRBO listing?
                   </Button>
                 </h6>
               </Card.Header>
               <Collapse in={open[3].value}>
                 <Card.Body>
                   <Card.Text className="text-justify" id="question3">
-                    An Airbnb listing optimization is the process - half
-                    science, half art - of continuously fine-tuning an Airbnb
-                    listing to systematically move it towards the top of Airbnb
-                    search. It's like SEO for Airbnb.
+                    An Airbnb/VRBO listing optimization is the process - half
+                    science, half art - of continuously fine-tuning an Airbnb/VRBO
+                    listing to systematically move it towards the top of Airbnb/VRBO
+                    search. It's like SEO for Airbnb/VRBO.
                   </Card.Text>
                 </Card.Body>
               </Collapse>
@@ -245,7 +245,7 @@ class FAQ extends Component {
                   <Card.Text className="text-justify" id="question4">
                     Dipsea has developed a system that examines the guest
                     profile and message content to determine guest quality. This
-                    is in addition to requiring a verified ID and Airbnb's Trust
+                    is in addition to requiring a verified ID and Airbnb/VRBO's Trust
                     + Safety department.
                   </Card.Text>
                 </Card.Body>
@@ -359,14 +359,14 @@ class FAQ extends Component {
                         alt="Down Arrow"
                       />
                     )}
-                    Why do you only list on Airbnb?
+                    Why do you only list on Airbnb/VRBO?
                   </Button>
                 </h6>
               </Card.Header>
               <Collapse in={open[7].value}>
                 <Card.Body>
                   <Card.Text className="text-justify" id="question7">
-                    Dipsea has decided to focus on the market leader, Airbnb,
+                    Dipsea has decided to focus on the market leader, Airbnb/VRBO,
                     instead of being 'just ok' on multiple vacation rental
                     platforms. This results in high occupancy and nightly rates
                     for all of my listings including during slow travel season.
@@ -425,7 +425,7 @@ class FAQ extends Component {
                         If we determine that I am not a good fit for you, often
                         I can recommend someone who is.
                       </li>
-                      <li>Airbnb listings link</li>
+                      <li>Airbnb/VRBO listings link</li>
                     </ul>
                   </Card.Text>
                 </Card.Body>
