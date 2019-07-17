@@ -10,7 +10,7 @@ class Pricing extends Component {
   render() {
     return (
       <div id="pricing" className="padding-top-40">
-        <h2 >Full-Service Airbnb Management</h2>
+        <h2 >Full-Service Vacation Rental Management</h2>
         <h6 className="padding-bottom-30">15%-25% Of Nightly Rate</h6>
 
         <Carousel controls="true">
@@ -20,10 +20,10 @@ class Pricing extends Component {
                 <img
                   src={require("../../img/features/Thumbs-Up.svg")}
                   className="feature__img"
-                  alt="Airbnb Profile Listing Creation"
+                  alt="Vacation Rental Profile Listing Creation"
                 />
 
-                <h6>Airbnb Profile &amp; Listing Creation</h6>
+                <h6>Airbnb/VRBO Profile &amp; Listing Creation</h6>
                 <p>
                   Take care of all set up details to make your listing
                   informative and attractive.
@@ -166,10 +166,10 @@ class Pricing extends Component {
                 <img
                   src={require("../../img/features/Trophy.svg")}
                   className="feature__img"
-                  alt="Continuous Airbnb Listing Optimization"
+                  alt="Continuous Vacation Rental Listing Optimization"
                 />
 
-                <h6>Continuous Airbnb Listing Optimization</h6>
+                <h6>Continuous Vacation Rental Listing Optimization</h6>
                 <p>
                   Insure your listing is receiving for the most views possible
                   through our data driven optimizations.

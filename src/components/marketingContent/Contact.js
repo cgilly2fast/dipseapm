@@ -30,7 +30,7 @@ class Contact extends Component {
         thisElement.setState({ success: true });
         setTimeout(() => {
           thisElement.setState({ success: false });
-        }, 9999);
+        }, 19998);
       })
       .catch(function(error) {
         console.error("Error adding document: ", error);
@@ -45,10 +45,10 @@ class Contact extends Component {
           <React.Fragment>
             <h2>Send us a message</h2>
             <p>
-              Send Colby a message. But first! Have you read the{" "}
-              <a href="#FAQs">FAQs</a>, specifically 'How do I get started? This
-              will eliminate much back and forth. Feel free to message me
-              directly at colby@dipseapm.com or fill out the form below.
+              Send Colby a message. But first! Have you read the 
+              <a href="#FAQs">FAQs</a>, specifically 'How do I get started? Feel
+              free to fill out the form below, or call/email directly at
+              415-209-5847 colby@dipseapm.com.
             </p>
             <Form onSubmit={e => this.handleSubmit(e)}>
               <Form.Group>
@@ -87,7 +87,7 @@ class Contact extends Component {
                 <Form.Label>Message</Form.Label>
                 <Form.Control
                   type="text-area"
-                  placeholder="Your message here... (Include your Airbnb listing link)"
+                  placeholder="Your message here... (Include your Airbnb/VRBO listing link)"
                   onChange={this.handleChange}
                   id="body"
                 />
@@ -102,7 +102,6 @@ class Contact extends Component {
           <div className="margin-top-99 margin-bottom-99">
             <h2>Thank you for your message!</h2>
             <h2>We will be in contact shortly.</h2>
-            
           </div>
         )}
       </div>

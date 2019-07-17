@@ -1,6 +1,5 @@
-import React, { Component } from 'react';
-import Carousel from 'react-bootstrap/Carousel';
-// import Jumbotron from "react-bootstrap/Jumbotron";
+import React, { Component } from "react";
+import Carousel from "react-bootstrap/Carousel";
 
 class HouseCarousel extends Component {
   constructor(props, context) {
@@ -23,6 +22,7 @@ class HouseCarousel extends Component {
 
   render() {
     const { index, direction } = this.state;
+    const { page } = this.props;
 
     return (
       <React.Fragment>
@@ -30,24 +30,28 @@ class HouseCarousel extends Component {
         <Carousel
           activeIndex={index}
           direction={direction}
+          controls={false}
+          indicators={false}
           onSelect={this.handleSelect}
           interval={5000000}
         >
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src={require('../img/houses/house1.png')}
+
+              src={require(`../img/houses/${page === "Home" || page === "Stinson Beach" ? "Stinson_Beach" : page}.png`)}
+
               alt="First slide"
             />
             <Carousel.Caption>
-              <h2>Airbnb Management</h2>
+              <h2>{page !== "Home" ? page:""} Vacation Rental Management</h2>
               <p>
                 Free up your time, meet your revenue goals, and deliver
                 memorable experiences to guests.
               </p>
             </Carousel.Caption>
           </Carousel.Item>
-          <Carousel.Item>
+          {/* <Carousel.Item>
             <img
               className="d-block w-100"
               src={require('../img/houses/house2.png')}
@@ -55,7 +59,7 @@ class HouseCarousel extends Component {
             />
 
             <Carousel.Caption>
-              <h2>Airbnb Management</h2>
+              <h2>Vacation Rental Management</h2>
               <p>
                 Free up your time, meet your revenue goals, and deliver
                 memorable experiences to guests.
@@ -70,7 +74,7 @@ class HouseCarousel extends Component {
             />
 
             <Carousel.Caption>
-              <h2>Airbnb Management</h2>
+              <h2>Vacation Rental Management</h2>
               <p>
                 Free up your time, meet your revenue goals, and deliver
                 memorable experiences to guests.
@@ -84,7 +88,7 @@ class HouseCarousel extends Component {
               alt="Fouth slide"
             />
             <Carousel.Caption>
-              <h2>Airbnb Management</h2>
+              <h2>Vacation Rental Management</h2>
               <p>
                 Free up your time, meet your revenue goals, and deliver
                 memorable experiences to guests.
@@ -98,27 +102,27 @@ class HouseCarousel extends Component {
               alt="Fith slide"
             />
             <Carousel.Caption>
-              <h2>Airbnb Management</h2>
+              <h2>Vacation Rental Management</h2>
               <p>
                 Free up your time, meet your revenue goals, and deliver
                 memorable experiences to guests.
               </p>
             </Carousel.Caption>
           </Carousel.Item>
-          <Carousel.Item>
+          <Carousel.Item> 
             <img
               className="d-block w-100"
               src={require('../img/houses/house6.png')}
               alt="Sixth slide"
             />
             <Carousel.Caption>
-              <h2>Airbnb Management</h2>
+              <h2>Vacation Rental Management</h2>
               <p>
                 Free up your time, meet your revenue goals, and deliver
                 memorable experiences to guests.
               </p>
             </Carousel.Caption>
-          </Carousel.Item>
+          </Carousel.Item>*/}
         </Carousel>
         {/* <div class="main-text hidden-xs">
                 <div class="col-md-12 text-center">

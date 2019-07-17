@@ -8,12 +8,13 @@ import Contact from './marketingContent/Contact';
 class Marketing extends Component {
   state = {};
   render() {
+    const { page } = this.props;
     return (
       <React.Fragment>
         <Containter>
-          <WhyDipsea />
+          <WhyDipsea page={page}/>
           <Pricing />
-          <FAQ />
+          <FAQ page={page}/>
           <Contact />
         </Containter>
       </React.Fragment>
