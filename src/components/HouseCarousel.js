@@ -38,7 +38,9 @@ class HouseCarousel extends Component {
           <Carousel.Item>
             <img
               className="d-block w-100"
+
               src={require(`../img/houses/${page === "Home" || page === "Stinson Beach" ? "Stinson_Beach" : page}.png`)}
+
               alt="First slide"
             />
             <Carousel.Caption>
@@ -52,7 +54,7 @@ class HouseCarousel extends Component {
           {/* <Carousel.Item>
             <img
               className="d-block w-100"
-              src={require("../img/houses/house2.png")}
+              src={require('../img/houses/house2.png')}
               alt="Third slide"
             />
 
@@ -67,7 +69,7 @@ class HouseCarousel extends Component {
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src={require("../img/houses/house3.png")}
+              src={require('../img/houses/house3.png')}
               alt="Third slide"
             />
 
@@ -82,7 +84,7 @@ class HouseCarousel extends Component {
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src={require("../img/houses/house4.png")}
+              src={require('../img/houses/house4.png')}
               alt="Fouth slide"
             />
             <Carousel.Caption>
@@ -96,7 +98,7 @@ class HouseCarousel extends Component {
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src={require("../img/houses/house5.png")}
+              src={require('../img/houses/house5.png')}
               alt="Fith slide"
             />
             <Carousel.Caption>
@@ -110,7 +112,7 @@ class HouseCarousel extends Component {
           <Carousel.Item> 
             <img
               className="d-block w-100"
-              src={require("../img/houses/house6.png")}
+              src={require('../img/houses/house6.png')}
               alt="Sixth slide"
             />
             <Carousel.Caption>
