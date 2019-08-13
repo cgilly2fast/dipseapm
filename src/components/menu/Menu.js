@@ -10,7 +10,7 @@ class Menu extends Component {
     const { placement } = this.state.placement
     return (
       <Navbar collapseOnSelect expand="sm" bg="light" variant="light" fixed={ placement }>
-        <Navbar.Brand href="#home"><img src={require("../../img/logo/DipseaLogo.svg")} height="45" width="260" alt="Dipsea Stinson Beach Vacation Rental Property Management"/></Navbar.Brand>
+        <Navbar.Brand href="#home"><img src={require("../../img/logo/DipseaLogo.png")} height="45" width="260" alt="Dipsea Stinson Beach Vacation Rental Property Management"/></Navbar.Brand>
         <Navbar.Toggle aria-controls="reponsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end padding-top-30" >
           <Nav className="d-flex ">
