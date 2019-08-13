@@ -3,6 +3,7 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import Col from "react-bootstrap/Col";
 import firebase from "../../config/firebaseConfig";
+import Email from  '../../Smtp.js';
 
 class Contact extends Component {
   state = {
@@ -21,6 +22,24 @@ class Contact extends Component {
 
   handleSubmit = e => {
     // Get a reference to the database service
+    e.preventDefault()
+    Email.send({
+     Host : 'smtp.elasticemail.com',
+     Username : 'ahmedreo4@gmail.com',
+     Password : '23ea8114-d731-4cda-a799-6d3f04e2ef62',
+     To : 'colby@dipseapm.com',
+     From : 'ahmedreo4@gmail.com',
+     Subject : '[Dipseapm.com] ' + this.state.name + ' ' + 'New Client Inqury',
+     Body : `
+       <p> Name: ${this.state.name} </p> </br>
+       <p> Phone: ${this.state.phone} </p> </br>
+       <p> Email: ${this.state.email} </p> </br>
+       <p> Body: ${this.state.body} </p> </br>
+     `
+    }).then(message => {
+        // alert(message)
+      }
+    );
     let thisElement = this;
     let db = firebase.firestore();
     db.collection("inquires")
