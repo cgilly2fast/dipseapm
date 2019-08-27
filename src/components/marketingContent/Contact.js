@@ -25,10 +25,10 @@ class Contact extends Component {
     e.preventDefault()
     Email.send({
      Host : 'smtp.elasticemail.com',
-     Username : 'ahmedreo4@gmail.com',
-     Password : '23ea8114-d731-4cda-a799-6d3f04e2ef62',
+     Username : 'colby@dipseapm.com',
+     Password : 'abddd966-cbb4-4228-985d-c148c6b185c3',
      To : 'colby@dipseapm.com',
-     From : 'ahmedreo4@gmail.com',
+     From : 'colby@dipseapm.com',
      Subject : '[Dipseapm.com] ' + this.state.name + ' ' + 'New Client Inqury',
      Body : `
        <p> Name: ${this.state.name} </p> </br>
